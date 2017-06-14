@@ -15,10 +15,6 @@
             }
         }
     },
-    "variables": {
-        "sku": "F1",
-        "workerSize":"0"
-    },
     "resources": [
         {
             "apiVersion": "2015-08-01",
@@ -26,8 +22,11 @@
             "type": "Microsoft.Web/serverfarms",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "[variables('sku')]",
-                "capacity": "[variables('workerSize')]"
+                "name": "F1",
+                "tier": "Free",
+                "size": "F1",
+                "family": "F",
+                "capacity": 0
             },
             "properties": {
                 "name": "[parameters('hostingPlanName')]"
