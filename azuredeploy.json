@@ -22,7 +22,6 @@
             "type": "Microsoft.Web/serverfarms",
             "location": "[resourceGroup().location]",
             "properties": {
-                "name": "[parameters('hostingPlanName')]",
                 "sku": "Free",
                 "workerSize": "0",
                 "numberOfWorkers": 1
