@@ -39,7 +39,12 @@
                 "siteConfig": {
                     "localMySqlEnabled": true,
                     "scmType": "LocalGit",
-                    "branch":"lcoalgit"
+                    "appSettings": [
+                        {
+                            "Name": "deployment_branch",
+                            "Value": "localgit"
+                        }
+                    ]
                 },
                 "serverFarmId": "[parameters('hostingPlanName')]"
             }
