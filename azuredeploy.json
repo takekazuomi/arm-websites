@@ -36,6 +36,9 @@
                 "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
             ],
             "properties": {
+                "siteConfig": {
+                    "localMySqlEnabled": true
+                },
                 "serverFarmId": "[parameters('hostingPlanName')]"
             }
         }
