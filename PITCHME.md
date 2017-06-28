@@ -1,9 +1,12 @@
-# デプロイ方法
-このブランチでは、最初にAppService Plan と、WebAppsを作成し、その後local git deploy の設定をする
+# photoapp
+
+
+## デプロイ方法
+photoapp ブランチでは、最初にAppService Plan と、WebAppsを作成し、その後local git deploy の設定をする
 
 ---
 
-# github からコードを持ってくる
+## github からコードを持ってくる
 
 ```
 git clone https://github.com/takekazuomi/arm-websites.git
@@ -12,7 +15,7 @@ cd arm-websites
 
 ---
 
-# ブランチを切り替える
+## ブランチを切り替える
 
 ```
 git checkout -b photoapp origin/photoapp
@@ -20,7 +23,7 @@ git checkout -b photoapp origin/photoapp
 
 ---
 
-# 確認
+## 確認
 
 ```
 git branch -av                                                                                    
@@ -37,7 +40,7 @@ git branch -av
 
 ---
 
-# AppService Plan と、WebAppsの作成
+## AppService Plan と、WebAppsの作成
 後でも使うので、$name に任意のユニークな名前を入れる。$name.
 
 ```
@@ -47,7 +50,7 @@ $name = "ユニークな名前"
 
 ---
 
-# local git のリモートに WebAppsを登録
+## local git のリモートに WebAppsを登録
 
 ```
 .\set-gitdeploy.ps1 $name azure
@@ -57,20 +60,20 @@ $name = "ユニークな名前"
 
 ---
 
-# アプリをデプロイ
+## アプリをデプロイ
 
 ```
 git push azure photoapp
 ```
 
-# サイトを開く
+## サイトを開く
 
 ```
 Start-Process "https://${name}.azurewebsites.net/"
 ```
 
 ---
-# 元のコード
+## 元のコード
 
 https://github.com/MSFTImagine/computerscience/tree/master/Workshop/2.%20Web%20Apps
 
