@@ -42,7 +42,7 @@
                     "appSettings": [
                         {
                             "Name": "deployment_branch",
-                            "Value": "localgit"
+                            "Value": "photoapp"
                         }
                     ]
                 },
