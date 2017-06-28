@@ -17,7 +17,7 @@ git checkout -b photoapp origin/photoapp
 # 確認
 
 ```
-git br -av                                                                                    
+git branch -av                                                                                    
 
   master                    8a73211 add mysql in app test code                                  
 * photoapp                  47a0742 update readme                                               
@@ -47,9 +47,19 @@ $name = "ユニークな名前"
 
 # アプリをデプロイ
 
+```
 git push azure photoapp
+```
 
+# サイトを開く
 
+```
+Start-Process "https://${name}.azurewebsites.net/"
+```
+
+# 元のコード
+
+https://github.com/MSFTImagine/computerscience/tree/master/Workshop/2.%20Web%20Apps
 
 
 
