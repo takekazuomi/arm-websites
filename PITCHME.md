@@ -1,5 +1,10 @@
 # photoapp
 
+レポジトリ
+
+https://goo.gl/SMdH4P
+
+---
 
 ## デプロイ方法
 photoapp ブランチでは、最初にAppService Plan と、WebAppsを作成し、その後local git deploy の設定をする
